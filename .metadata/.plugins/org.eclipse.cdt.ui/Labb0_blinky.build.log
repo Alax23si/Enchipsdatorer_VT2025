@@ -1,0 +1,10 @@
+15:47:50 **** Incremental Build of configuration Debug for project Labb0_blinky ****
+make -j12 all 
+arm-none-eabi-size  Labb0_blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14604	     92	   2036	  16732	   415c	Labb0_blinky.elf
+Finished building: default.size.stdout
+ 
+
+15:47:50 Build Finished. 0 errors, 0 warnings. (took 255ms)
+

@@ -1,0 +1,33 @@
+!SESSION 2025-03-30 13:30:48.531 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-30 13:31:09.864
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-30 13:31:09.864
+!MESSAGE Log4j2 initialized with config file C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-30 13:31:11.914
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-03-30 13:40:23.658 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-30 13:40:33.987
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-30 13:40:33.988
+!MESSAGE Log4j2 initialized with config file C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-30 13:40:35.934
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-30 13:55:09.890
+!MESSAGE Indexed 'Labb0_blinky' (23 sources, 82 headers) in 1.26 sec: 5,348 declarations; 28,158 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.006%)
