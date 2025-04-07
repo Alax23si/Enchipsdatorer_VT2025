@@ -63,8 +63,8 @@ const uint16_t sseg[10] = {0x5F, 0x06, 0x9B, 0x8F, 0xC6, 0xCD, 0xDC, 0X87, 0XDF,
 const uint16_t sseg_err = 0x19C;
 
 void put_on_sseg(uint8_t dec_nbr){
-	if(dec_nbr < 0 || dec_nbr > 9){
-		GPIOC->ODR = sseg_err;
+	if(dec_nbr < 1 || dec_nbr > 6){
+		GPOIC->ODR = sseg_err;
 		return;
 	}
 	GPIOC->ODR = sseg[dec_nbr];
@@ -176,7 +176,7 @@ int main(void)
 	  pressed = is_blue_button_pressed();
 	  	  if(pressed){
 	  		  HAL_GPIO_WritePin(LD4_GPIO_Port,LD4_Pin,GPIO_PIN_SET);
-	  		  die_value = (rand()%9)+1;
+	  		  die_value = (rand()%6)+1;
 	  	  }
 	  	  else{
 
@@ -184,8 +184,7 @@ int main(void)
 	  		  uint16_t ld4_pin_nbr = 13;
 	  		  uint16_t ld4_pin = 0x01 << ld4_pin_nbr;
 	  		  HAL_GPIO_WritePin(ld4_gpio,ld4_pin, GPIO_PIN_RESET);
-	  		  //put_die_dots(die_value);
-	  		  put_on_sseg(die_value);
+	  		  put_die_dots(die_value);
 	  	  }
 
   }

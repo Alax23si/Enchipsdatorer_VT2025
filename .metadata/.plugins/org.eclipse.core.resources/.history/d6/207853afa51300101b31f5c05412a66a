@@ -176,7 +176,7 @@ int main(void)
 	  pressed = is_blue_button_pressed();
 	  	  if(pressed){
 	  		  HAL_GPIO_WritePin(LD4_GPIO_Port,LD4_Pin,GPIO_PIN_SET);
-	  		  die_value = (rand()%9)+1;
+	  		  die_value = (rand()%6)+1;
 	  	  }
 	  	  else{
 
