@@ -59,7 +59,7 @@ void put_on_sseg(uint8_t dec_nbr);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-const uint16_t sseg[10] = {0x5F, 0x06, 0x9B, 0x8F, 0xC6, 0xCD, 0xDC, 0X87, 0XDF, 0XC7};
+const uint16_t sseg[10] = {0x5F, 0x6, 0x9B, 0x8F, 0xC6, 0xCD, 0xDD, 0X07, 0XDF, 0XC7};
 const uint16_t sseg_err = 0x19C;
 
 void put_on_sseg(uint8_t dec_nbr){
@@ -73,7 +73,7 @@ void put_on_sseg(uint8_t dec_nbr){
 // returns 1 if b button is pressed
 //reutrns 0 if not
 int is_blue_button_pressed(){
-	return GPIOC->IDR;
+	return GPIOC->IDR & 0x2000;
 }
 void put_die_dots(uint8_t die_nbr){
 	HAL_GPIO_WritePin(DI_A_GPIO_Port, DI_A_Pin, GPIO_PIN_RESET);
@@ -166,28 +166,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   srand(HAL_GetTick());
   int pressed = 0;
-  uint8_t die_value = 1;
+  uint8_t die_value = 0;
 
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  pressed = is_blue_button_pressed();
-	  	  if(pressed){
+	  	pressed = is_blue_button_pressed();
+	  	;if(pressed){
 	  		  HAL_GPIO_WritePin(LD4_GPIO_Port,LD4_Pin,GPIO_PIN_SET);
 	  		  die_value = (rand()%9)+1;
+	  }
+		else{
+		  GPIO_TypeDef* ld4_gpio = GPIOB;
+		  uint16_t ld4_pin_nbr = 13;
+		  uint16_t ld4_pin = 0x01 << ld4_pin_nbr;
+		  HAL_GPIO_WritePin(ld4_gpio,ld4_pin, GPIO_PIN_RESET);
+		  //put_die_dots(die_value);
+		  put_on_sseg(die_value);
 	  	  }
-	  	  else{
-
-	  		  GPIO_TypeDef* ld4_gpio = GPIOB;
-	  		  uint16_t ld4_pin_nbr = 13;
-	  		  uint16_t ld4_pin = 0x01 << ld4_pin_nbr;
-	  		  HAL_GPIO_WritePin(ld4_gpio,ld4_pin, GPIO_PIN_RESET);
-	  		  //put_die_dots(die_value);
-	  		  put_on_sseg(die_value);
-	  	  }
-
   }
   /* USER CODE END 3 */
 }
@@ -305,11 +303,11 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOB, DI_A_Pin|DI_B_Pin|DI_C_Pin|DI_D_Pin
                           |DI_E_Pin|LD4_Pin|DI_F_Pin|DI_G_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : B1_Pin */
-  GPIO_InitStruct.Pin = B1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+  /*Configure GPIO pin : PC13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PC0 PC1 PC2 PC3
                            PC4 PC6 PC7 PC8 */

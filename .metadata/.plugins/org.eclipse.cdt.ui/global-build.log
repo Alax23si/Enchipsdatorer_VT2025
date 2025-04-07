@@ -1,5 +1,28 @@
-13:44:41 **** Incremental Build of configuration Debug for project labb1_tarning ****
-make -j8 all 
+18:13:49 **** Incremental Build of configuration Debug for project labb1_tarning ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:3: warning: implicit declaration of function 'srand' [-Wimplicit-function-declaration]
+  167 |   srand(HAL_GetTick());
+      |   ^~~~~
+../Core/Src/main.c:179:40: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+  179 |                           die_value = (rand()%9)+1;
+      |                                        ^~~~
+arm-none-eabi-gcc -o "labb1_tarning.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\labb1_tarning\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb1_tarning.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb1_tarning.elf
+ 
+arm-none-eabi-size  labb1_tarning.elf 
+arm-none-eabi-objdump -h -S labb1_tarning.elf  > "labb1_tarning.list"
+   text	   data	    bss	    dec	    hex	filename
+  16584	    104	   2040	  18728	   4928	labb1_tarning.elf
+Finished building: default.size.stdout
+ 
+Finished building: labb1_tarning.list
+ 
+18:14:19 **** Incremental Build of configuration Debug for project labb1_tarning ****
+make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "labb1_tarning.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\labb1_tarning\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb1_tarning.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: labb1_tarning.elf
@@ -7,7 +30,7 @@ Finished building target: labb1_tarning.elf
 arm-none-eabi-size  labb1_tarning.elf 
 arm-none-eabi-objdump -h -S labb1_tarning.elf  > "labb1_tarning.list"
    text	   data	    bss	    dec	    hex	filename
-  16580	    104	   2040	  18724	   4924	labb1_tarning.elf
+  16584	    104	   2040	  18728	   4928	labb1_tarning.elf
 Finished building: default.size.stdout
  
 Finished building: labb1_tarning.list
