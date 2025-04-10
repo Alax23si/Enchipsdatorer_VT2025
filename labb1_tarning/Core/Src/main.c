@@ -73,7 +73,7 @@ void put_on_sseg(uint8_t dec_nbr){
 // returns 1 if b button is pressed
 //reutrns 0 if not
 int is_blue_button_pressed(){
-	return GPIOC->IDR & 0x2000;
+	return (GPIOC->IDR & 0x2000) != 0;
 }
 void put_die_dots(uint8_t die_nbr){
 	HAL_GPIO_WritePin(DI_A_GPIO_Port, DI_A_Pin, GPIO_PIN_RESET);
@@ -174,18 +174,21 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  	pressed = is_blue_button_pressed();
-	  	;if(pressed){
+	  	if(pressed){
 	  		  HAL_GPIO_WritePin(LD4_GPIO_Port,LD4_Pin,GPIO_PIN_SET);
-	  		  die_value = (rand()%9)+1;
+	  		  die_value = (rand()%6)+1;
+	  		  uint8_t die_value2 = (rand()%9)+1;
+
+	  		  put_on_sseg(die_value2);
+	  		  put_die_dots(die_value);
 	  }
 		else{
 		  GPIO_TypeDef* ld4_gpio = GPIOB;
 		  uint16_t ld4_pin_nbr = 13;
 		  uint16_t ld4_pin = 0x01 << ld4_pin_nbr;
 		  HAL_GPIO_WritePin(ld4_gpio,ld4_pin, GPIO_PIN_RESET);
-		  //put_die_dots(die_value);
-		  put_on_sseg(die_value);
 	  	  }
+	  HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }
