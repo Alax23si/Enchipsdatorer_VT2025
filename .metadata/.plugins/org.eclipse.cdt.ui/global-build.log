@@ -1,70 +1,35 @@
-13:59:56 **** Incremental Build of configuration Debug for project labb1_tarning ****
+16:35:26 **** Incremental Build of configuration Debug for project Labb2_trafikljus ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "labb1_tarning.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\labb1_tarning\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb1_tarning.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: labb1_tarning.elf
+arm-none-eabi-gcc -o "Labb2_trafikljus.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb2_trafikljus\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb2_trafikljus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Labb2_trafikljus.elf
  
-arm-none-eabi-size  labb1_tarning.elf 
-arm-none-eabi-objdump -h -S labb1_tarning.elf  > "labb1_tarning.list"
+arm-none-eabi-size  Labb2_trafikljus.elf 
+arm-none-eabi-objdump -h -S Labb2_trafikljus.elf  > "Labb2_trafikljus.list"
    text	   data	    bss	    dec	    hex	filename
-  17040	    104	   2040	  19184	   4af0	labb1_tarning.elf
+  17392	     12	   1812	  19216	   4b10	Labb2_trafikljus.elf
 Finished building: default.size.stdout
  
-Finished building: labb1_tarning.list
+Finished building: Labb2_trafikljus.list
  
-14:00:01 **** Incremental Build of configuration Debug for project labb1_tarning ****
+16:35:34 **** Incremental Build of configuration Debug for project Labb2_trafikljus ****
 make -j8 all 
-arm-none-eabi-size  labb1_tarning.elf 
+arm-none-eabi-size  Labb2_trafikljus.elf 
    text	   data	    bss	    dec	    hex	filename
-  17040	    104	   2040	  19184	   4af0	labb1_tarning.elf
+  17392	     12	   1812	  19216	   4b10	Labb2_trafikljus.elf
 Finished building: default.size.stdout
  
-14:03:39 **** Incremental Build of configuration Debug for project labb1_tarning ****
+16:37:53 **** Incremental Build of configuration Debug for project Labb2_trafikljus ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "labb1_tarning.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\labb1_tarning\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb1_tarning.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: labb1_tarning.elf
- 
-arm-none-eabi-size  labb1_tarning.elf 
-arm-none-eabi-objdump -h -S labb1_tarning.elf  > "labb1_tarning.list"
+arm-none-eabi-size  Labb2_trafikljus.elf 
    text	   data	    bss	    dec	    hex	filename
-  17052	    104	   2040	  19196	   4afc	labb1_tarning.elf
+  17392	     12	   1812	  19216	   4b10	Labb2_trafikljus.elf
 Finished building: default.size.stdout
  
-Finished building: labb1_tarning.list
- 
-14:07:10 **** Incremental Build of configuration Debug for project labb1_tarning ****
+16:42:59 **** Incremental Build of configuration Debug for project Labb2_trafikljus ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "labb1_tarning.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\labb1_tarning\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb1_tarning.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: labb1_tarning.elf
- 
-arm-none-eabi-size  labb1_tarning.elf 
-arm-none-eabi-objdump -h -S labb1_tarning.elf  > "labb1_tarning.list"
+arm-none-eabi-size  Labb2_trafikljus.elf 
    text	   data	    bss	    dec	    hex	filename
-  16672	    104	   2040	  18816	   4980	labb1_tarning.elf
-Finished building: default.size.stdout
- 
-Finished building: labb1_tarning.list
- 
-14:20:24 **** Incremental Build of configuration Debug for project labb1_tarning ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "labb1_tarning.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\labb1_tarning\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb1_tarning.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: labb1_tarning.elf
- 
-arm-none-eabi-size  labb1_tarning.elf 
-arm-none-eabi-objdump -h -S labb1_tarning.elf  > "labb1_tarning.list"
-   text	   data	    bss	    dec	    hex	filename
-  17168	    104	   2040	  19312	   4b70	labb1_tarning.elf
-Finished building: default.size.stdout
- 
-Finished building: labb1_tarning.list
- 
-14:21:01 **** Incremental Build of configuration Debug for project labb1_tarning ****
-make -j8 all 
-arm-none-eabi-size  labb1_tarning.elf 
-   text	   data	    bss	    dec	    hex	filename
-  17168	    104	   2040	  19312	   4b70	labb1_tarning.elf
+  17392	     12	   1812	  19216	   4b10	Labb2_trafikljus.elf
 Finished building: default.size.stdout
  
