@@ -141,9 +141,9 @@ void qs_put_bitmask_at(uint8_t bm, uint8_t loc)
 void qs_put_digits(uint8_t d0, uint8_t d1, uint8_t d2, uint8_t d3, uint8_t colon)
 {
 	qs_put_bitmasks(seg_array[d0],
-					seg_array[d1] | (colon ? 0x80 : 0x00),
-					seg_array[d2],
-					seg_array[d3]);
+			seg_array[d1] | (colon ? 0x80 : 0x00),
+			seg_array[d2],
+			seg_array[d3]);
 }
 
 

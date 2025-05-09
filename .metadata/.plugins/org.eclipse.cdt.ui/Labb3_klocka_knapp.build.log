@@ -1,10 +1,10 @@
-17:01:01 **** Incremental Build of configuration Debug for project Labb3_klocka_knapp ****
+14:12:40 **** Incremental Build of configuration Debug for project Labb3_klocka_knapp ****
 make -j8 all 
 arm-none-eabi-size  Labb3_klocka_knapp.elf 
    text	   data	    bss	    dec	    hex	filename
-  15292	     36	   1788	  17116	   42dc	Labb3_klocka_knapp.elf
+  15344	     32	   1792	  17168	   4310	Labb3_klocka_knapp.elf
 Finished building: default.size.stdout
  
 
-17:01:01 Build Finished. 0 errors, 0 warnings. (took 282ms)
+14:12:41 Build Finished. 0 errors, 0 warnings. (took 530ms)
 

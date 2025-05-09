@@ -1,0 +1,43 @@
+2025-05-07 10:57:09,685 [INFO] WebApp:194 - Connection lost
+2025-05-07 11:26:07,990 [INFO] WebApp:191 - Connection restablished
+2025-05-07 12:16:07,678 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 877274560 Bytes (1073741824)
+2025-05-07 12:16:13,118 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 917842184 Bytes (1073741824)
+2025-05-07 12:16:15,236 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 624263384 Bytes (1073741824)
+2025-05-07 12:16:15,715 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-05-07 12:16:15,715 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2025-05-07 12:16:15,716 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM6_7L4
+2025-05-07 12:16:15,716 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8L4
+2025-05-07 12:16:15,716 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-05-07 12:16:15,717 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-05-07 12:16:15,717 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-05-07 12:16:15,718 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: I2C
+2025-05-07 12:16:15,722 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2025-05-07 12:16:15,903 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\MXTmpFiles\license.tmp_save
+2025-05-07 12:16:16,230 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\MXTmpFiles\license.tmp
+2025-05-07 12:16:16,313 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\MXTmpFiles\gpio.tmp_save
+2025-05-07 12:16:16,438 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\MXTmpFiles\gpio.tmp
+2025-05-07 12:16:16,663 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Src\stm32l4xx_it.c_save
+2025-05-07 12:16:16,938 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Src\stm32l4xx_it.c
+2025-05-07 12:16:16,952 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Inc\stm32l4xx_it.h_save
+2025-05-07 12:16:17,040 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Inc\stm32l4xx_it.h
+2025-05-07 12:16:17,066 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Src\stm32l4xx_hal_msp.c_save
+2025-05-07 12:16:17,255 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Src\stm32l4xx_hal_msp.c
+2025-05-07 12:16:17,267 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\MXTmpFiles\system.tmp_save
+2025-05-07 12:16:17,342 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\MXTmpFiles\system.tmp
+2025-05-07 12:16:17,366 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Inc\stm32l4xx_hal_conf.h_save
+2025-05-07 12:16:17,453 [INFO] CodeEngine:343 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Inc\stm32l4xx_hal_conf.h
+2025-05-07 12:16:17,481 [WARN] IPConfigManager:3747 - IP not found : TIM
+2025-05-07 12:16:17,482 [WARN] CodeGenerator:4198 - IP not found : null
+2025-05-07 12:16:17,495 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Inc\main.h_save
+2025-05-07 12:16:17,615 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Inc\main.h
+2025-05-07 12:16:17,629 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Src\main.c_save
+2025-05-07 12:16:17,781 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\Core\Src\main.c
+2025-05-07 12:16:18,442 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 437mS.
+2025-05-07 12:16:18,448 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2025-05-07 12:16:18,542 [INFO] ConfigFileManager:1590 - The Die is : DIE435
+2025-05-07 12:16:19,812 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 1363mS.
+2025-05-07 12:16:19,814 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 2mS.
+2025-05-07 12:16:19,818 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 2mS.
+2025-05-07 12:53:45,707 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-05-07 15:06:06,898 [INFO] WebApp:194 - Connection lost
+2025-05-07 15:06:07,277 [INFO] WebApp:191 - Connection restablished
