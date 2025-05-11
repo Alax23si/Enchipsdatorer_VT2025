@@ -1,0 +1,10 @@
+../Core/Src/quad_sseg.c:42:6:TM1637_Delay	2
+../Core/Src/quad_sseg.c:51:6:TM1637_Strt	1
+../Core/Src/quad_sseg.c:58:6:TM1637_Stop	1
+../Core/Src/quad_sseg.c:68:6:TM1637_WriteByte	4
+../Core/Src/quad_sseg.c:99:6:TM1637_WriteCmnd	1
+../Core/Src/quad_sseg.c:106:6:TM1637_WriteData	1
+../Core/Src/quad_sseg.c:117:6:qs_put_bitmasks	1
+../Core/Src/quad_sseg.c:129:6:qs_put_bitmask_at	2
+../Core/Src/quad_sseg.c:141:6:qs_put_digits	2
+../Core/Src/quad_sseg.c:151:6:qs_put_big_num	4

@@ -63,7 +63,14 @@ void Error_Handler(void);
 #define MCO_GPIO_Port GPIOH
 #define SEG_DIO_Pin GPIO_PIN_0
 #define SEG_DIO_GPIO_Port GPIOC
+<<<<<<<< HEAD:labb3_Klocka_Knapp/Core/Inc/main.h
 #define SEG_CLK_Pin GPIO_PIN_1
+========
+#define MY_BTN_Pin GPIO_PIN_1
+#define MY_BTN_GPIO_Port GPIOC
+#define MY_BTN_EXTI_IRQn EXTI1_IRQn
+#define SEG_CLK_Pin GPIO_PIN_3
+>>>>>>>> 9a8f3b81e11d0a46e3404a52b7ab16910d387c97:Labb3_klocka_knapp/Core/Inc/main.h
 #define SEG_CLK_GPIO_Port GPIOC
 #define USART_TX_Pin GPIO_PIN_2
 #define USART_TX_GPIO_Port GPIOA

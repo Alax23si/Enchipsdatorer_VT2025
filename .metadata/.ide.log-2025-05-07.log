@@ -1,0 +1,41 @@
+2025-05-09 19:21:43,803 [INFO] WebApp:194 - Connection lost
+2025-05-09 19:22:11,603 [INFO] WebApp:191 - Connection restablished
+2025-05-09 19:22:14,891 [INFO] WebApp:194 - Connection lost
+2025-05-09 19:22:15,014 [INFO] WebApp:191 - Connection restablished
+2025-05-09 19:22:25,240 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 956968920 Bytes (1073741824)
+2025-05-09 19:22:26,891 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 977355888 Bytes (1073741824)
+2025-05-09 19:22:27,148 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 996230256 Bytes (1073741824)
+2025-05-09 19:22:27,378 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-05-09 19:22:27,378 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2025-05-09 19:22:27,378 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8L4
+2025-05-09 19:22:27,378 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-05-09 19:22:27,379 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-05-09 19:22:27,379 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-05-09 19:22:27,382 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2025-05-09 19:22:27,506 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\MXTmpFiles\license.tmp_save
+2025-05-09 19:22:27,909 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\MXTmpFiles\license.tmp
+2025-05-09 19:22:28,009 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\MXTmpFiles\gpio.tmp_save
+2025-05-09 19:22:28,300 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\MXTmpFiles\gpio.tmp
+2025-05-09 19:22:28,657 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Src\stm32l4xx_it.c_save
+2025-05-09 19:22:28,929 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Src\stm32l4xx_it.c
+2025-05-09 19:22:28,940 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Inc\stm32l4xx_it.h_save
+2025-05-09 19:22:29,064 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Inc\stm32l4xx_it.h
+2025-05-09 19:22:29,097 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Src\stm32l4xx_hal_msp.c_save
+2025-05-09 19:22:29,271 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Src\stm32l4xx_hal_msp.c
+2025-05-09 19:22:29,280 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\MXTmpFiles\system.tmp_save
+2025-05-09 19:22:29,351 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\MXTmpFiles\system.tmp
+2025-05-09 19:22:29,371 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Inc\stm32l4xx_hal_conf.h_save
+2025-05-09 19:22:29,459 [INFO] CodeEngine:343 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Inc\stm32l4xx_hal_conf.h
+2025-05-09 19:22:29,509 [INFO] ApiDbMcu:508 - Load IP Config File for TIM2
+2025-05-09 19:22:29,511 [WARN] IPConfigManager:3747 - IP not found : TIM
+2025-05-09 19:22:29,512 [WARN] CodeGenerator:4198 - IP not found : null
+2025-05-09 19:22:29,524 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Inc\main.h_save
+2025-05-09 19:22:29,638 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Inc\main.h
+2025-05-09 19:22:29,650 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Src\main.c_save
+2025-05-09 19:22:29,796 [INFO] CodeEngine:287 - Generated code: C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\Core\Src\main.c
+2025-05-09 19:22:30,376 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 373mS.
+2025-05-09 19:22:30,379 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2025-05-09 19:22:30,452 [INFO] ConfigFileManager:1590 - The Die is : DIE435
+2025-05-09 19:22:32,003 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 1623mS.
+2025-05-09 19:22:32,007 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 4mS.
+2025-05-09 19:22:32,011 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
