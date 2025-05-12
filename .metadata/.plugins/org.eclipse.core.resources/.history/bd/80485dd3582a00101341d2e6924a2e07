@@ -57,6 +57,8 @@ static void MX_USART2_UART_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/59/f02c99627a200010155d8dd500791845
+========
 struct clock_data{
 	uint8_t hrs;
 	uint8_t min;
@@ -69,6 +71,7 @@ void cd_set(struct clock_data *pcd,uint8_t hrs, uint8_t min, uint8_t sec){
 }
 struct clock_data my_clock;
 void cd_tick(struct clock_data *pcd){
+>>>>>>>> 9a8f3b81e11d0a46e3404a52b7ab16910d387c97:.metadata/.plugins/org.eclipse.core.resources/.history/bd/80485dd3582a00101341d2e6924a2e07
 
 }
 void HAL_TIM_PeriodElapsedCallback( TIM_HandleTypeDef *htim2 ){
@@ -324,6 +327,12 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/59/f02c99627a200010155d8dd500791845
+  HAL_GPIO_WritePin(GPIOC, SEG_DIO_Pin|SEG_CLK_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+========
+>>>>>>>> 9a8f3b81e11d0a46e3404a52b7ab16910d387c97:.metadata/.plugins/org.eclipse.core.resources/.history/bd/80485dd3582a00101341d2e6924a2e07
   HAL_GPIO_WritePin(GPIOA, SMPS_EN_Pin|SMPS_V1_Pin|SMPS_SW_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
@@ -334,6 +343,23 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/59/f02c99627a200010155d8dd500791845
+
+  /*Configure GPIO pin : SEG_DIO_Pin */
+  GPIO_InitStruct.Pin = SEG_DIO_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(SEG_DIO_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : SEG_CLK_Pin */
+  GPIO_InitStruct.Pin = SEG_CLK_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(SEG_CLK_GPIO_Port, &GPIO_InitStruct);
+========
+>>>>>>>> 9a8f3b81e11d0a46e3404a52b7ab16910d387c97:.metadata/.plugins/org.eclipse.core.resources/.history/bd/80485dd3582a00101341d2e6924a2e07
 
   /*Configure GPIO pins : SMPS_EN_Pin SMPS_V1_Pin SMPS_SW_Pin */
   GPIO_InitStruct.Pin = SMPS_EN_Pin|SMPS_V1_Pin|SMPS_SW_Pin;

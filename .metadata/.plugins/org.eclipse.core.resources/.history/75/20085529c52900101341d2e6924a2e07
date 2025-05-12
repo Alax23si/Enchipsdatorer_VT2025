@@ -41,11 +41,16 @@
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim2;
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
+========
+TIM_HandleTypeDef htim6;
+TIM_HandleTypeDef htim7;
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
 
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-
+uint8 interFlag = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -53,13 +58,40 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_TIM2_Init(void);
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
+========
+static void MX_TIM6_Init(void);
+static void MX_TIM7_Init(void);
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
 
+========
+int is_blue_button_pushed(){
+	return (GPIOC->IDR & 0X2000) != 0;
+}
+void trigger_hcsr04(){
+	HAL_GPIO_WritePin(MODUL_TRIGG_GPIO_Port, MODUL_TRIGG, GPIO_PIN_SET);
+	HAL_TIM_Base_Start_IT(&htim6);
+
+}
+void HAL_TIM_PeriodElapsedCallback(*htim ){
+	if(htim->instance == TIM6){
+		HAL_GPIO_WritePin(MODUL_TRIGG_GPIO_Port, MODUL_TRIGG, GPIO_PIN_RESET);
+		__HAL_TIM_SET_COUNTER(&htim6, 0);
+	}
+}
+void HAL_TIM_PeriodElapsedCallback(*htim ){
+	if(htim->instance == TIM2){
+		trigger_hcsr04();
+	}
+}
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
 /* USER CODE END 0 */
 
 /**
@@ -93,6 +125,11 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
+========
+  MX_TIM6_Init();
+  MX_TIM7_Init();
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -104,6 +141,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
+========
+	  if(is_blue_button_pushed())
+	  {
+		  HAL_TIM_Base_Start_IT(&htim2);
+	  }
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
   }
   /* USER CODE END 3 */
 }
@@ -176,9 +220,15 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
   htim2.Init.Prescaler = 9999;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 7999;
+========
+  htim2.Init.Prescaler = 799;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 9999;
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -203,6 +253,89 @@ static void MX_TIM2_Init(void)
 }
 
 /**
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
+========
+  * @brief TIM6 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM6_Init(void)
+{
+
+  /* USER CODE BEGIN TIM6_Init 0 */
+
+  /* USER CODE END TIM6_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM6_Init 1 */
+
+  /* USER CODE END TIM6_Init 1 */
+  htim6.Instance = TIM6;
+  htim6.Init.Prescaler = 79;
+  htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim6.Init.Period = 65535;
+  htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_OnePulse_Init(&htim6, TIM_OPMODE_SINGLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim6, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM6_Init 2 */
+
+  /* USER CODE END TIM6_Init 2 */
+
+}
+
+/**
+  * @brief TIM7 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM7_Init(void)
+{
+
+  /* USER CODE BEGIN TIM7_Init 0 */
+
+  /* USER CODE END TIM7_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM7_Init 1 */
+
+  /* USER CODE END TIM7_Init 1 */
+  htim7.Instance = TIM7;
+  htim7.Init.Prescaler = 79;
+  htim7.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim7.Init.Period = 65535;
+  htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim7) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim7, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM7_Init 2 */
+
+  /* USER CODE END TIM7_Init 2 */
+
+}
+
+/**
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -256,6 +389,12 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
+========
+  HAL_GPIO_WritePin(MODUL_TRIGG_GPIO_Port, MODUL_TRIGG_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
   HAL_GPIO_WritePin(GPIOA, SMPS_EN_Pin|SMPS_V1_Pin|SMPS_SW_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
@@ -266,6 +405,22 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/75/20085529c52900101341d2e6924a2e07
+========
+
+  /*Configure GPIO pin : MODUL_TRIGG_Pin */
+  GPIO_InitStruct.Pin = MODUL_TRIGG_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(MODUL_TRIGG_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : MODUL_ECHO_Pin */
+  GPIO_InitStruct.Pin = MODUL_ECHO_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(MODUL_ECHO_GPIO_Port, &GPIO_InitStruct);
+>>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:.metadata/.plugins/org.eclipse.core.resources/.history/df/f0525e457b2e00101669ad8ca08c5ac7
 
   /*Configure GPIO pins : SMPS_EN_Pin SMPS_V1_Pin SMPS_SW_Pin */
   GPIO_InitStruct.Pin = SMPS_EN_Pin|SMPS_V1_Pin|SMPS_SW_Pin;
