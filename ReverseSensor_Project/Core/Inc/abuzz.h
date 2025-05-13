@@ -9,7 +9,7 @@
 #define INC_ABUZZ_H_
 
 #include "main.h"
-
+extern TIM_HandleTypeDef htim1;
 
 // Set up the values in TIM2 to give a nice beep. Very long period gets set.
 void abuzz_start();
@@ -29,9 +29,8 @@ void abuzz_p_short();
 void abuzz_start()
 {
 	TIM1->PSC 	= 40000-1;
-	TIM1->ARR   = 0xFFFF;
-	TIM1->CCR2  = 0x0064;
 	TIM1->CNT   = 0x0000;
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 }
 
 

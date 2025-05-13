@@ -17,14 +17,15 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD"/>
 			<item value="C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="799"/>
+			<item key="DIALOG_X_ORIGIN" value="766"/>
 			<item key="DIALOG_Y_ORIGIN" value="150"/>
-			<item key="DIALOG_WIDTH" value="984"/>
-			<item key="DIALOG_HEIGHT" value="837"/>
-			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+			<item key="DIALOG_WIDTH" value="1163"/>
+			<item key="DIALOG_HEIGHT" value="726"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>
 </section>

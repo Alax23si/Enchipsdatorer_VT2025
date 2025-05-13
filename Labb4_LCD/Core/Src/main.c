@@ -90,7 +90,7 @@ void cd_tick(struct clock_data *pcd){
 }
 void HAL_TIM_PeriodElapsedCallback( TIM_HandleTypeDef *htim ){
 	if(htim->Instance == TIM2){
-		interFlag = 1;
+		interFlag++;
 	}
 }
 
@@ -155,14 +155,14 @@ int main(void)
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
-		if(interFlag){
-			interFlag = 0;
+		if(interFlag>0){
 			cd_tick(&my_clock);
 			sprintf(timeStr, "%02d:%02d:%02d", my_clock.hrs,my_clock.min,my_clock.sec);
 			TextLCD_Position(&lcd,0,0);
 			TextLCD_PutStr(&lcd, "Tid:");
 			TextLCD_Position(&lcd,8,1);
 			TextLCD_PutStr(&lcd,timeStr);
+			interFlag--;
 		}
 	}
 	/* USER CODE END 3 */
