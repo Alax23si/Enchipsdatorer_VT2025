@@ -61,13 +61,10 @@ void Error_Handler(void);
 #define B1_GPIO_Port GPIOC
 #define MCO_Pin GPIO_PIN_0
 #define MCO_GPIO_Port GPIOH
-<<<<<<<< HEAD:Labb4_LCD/Core/Inc/main.h
-========
 #define MODUL_TRIGG_Pin GPIO_PIN_0
 #define MODUL_TRIGG_GPIO_Port GPIOC
 #define MODUL_ECHO_Pin GPIO_PIN_1
 #define MODUL_ECHO_GPIO_Port GPIOC
->>>>>>>> 2d63062060e3af8026e74be6ddc7dfcfe939e1b4:ReverseSensor_Project/Core/Inc/main.h
 #define USART_TX_Pin GPIO_PIN_2
 #define USART_TX_GPIO_Port GPIOA
 #define USART_RX_Pin GPIO_PIN_3

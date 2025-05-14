@@ -1,25 +1,45 @@
-14:46:24 **** Incremental Build of configuration Debug for project ReverseSensor_Project ****
+13:54:30 **** Incremental Build of configuration Debug for project Labb4_LCD ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lcd.d" -MT"Core/Src/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd.o"
+arm-none-eabi-gcc -o "Labb4_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb4_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Labb4_LCD.elf
+ 
+arm-none-eabi-size  Labb4_LCD.elf 
+arm-none-eabi-objdump -h -S Labb4_LCD.elf  > "Labb4_LCD.list"
+   text	   data	    bss	    dec	    hex	filename
+  20532	     96	   2288	  22916	   5984	Labb4_LCD.elf
+Finished building: default.size.stdout
+ 
+Finished building: Labb4_LCD.list
+ 
+13:54:41 **** Incremental Build of configuration Debug for project Labb4_LCD ****
+make -j8 all 
+arm-none-eabi-size  Labb4_LCD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20532	     96	   2288	  22916	   5984	Labb4_LCD.elf
+Finished building: default.size.stdout
+ 
+13:55:56 **** Incremental Build of configuration Debug for project Labb4_LCD ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:97:17: warning: unused variable 'isTIM2Started' [-Wunused-variable]
-   97 |         uint8_t isTIM2Started = 0;
-      |                 ^~~~~~~~~~~~~
-arm-none-eabi-gcc -o "ReverseSensor_Project.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\ReverseSensor_Project\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="ReverseSensor_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ReverseSensor_Project.elf
+../Core/Src/main.c:161:53: warning: '%02d' directive writing between 2 and 3 bytes into a region of size between 1 and 3 [-Wformat-overflow=]
+  161 |                         sprintf(timeStr, "%02d:%02d:%02d", my_clock.hrs,my_clock.min,my_clock.sec);
+      |                                                     ^~~~
+../Core/Src/main.c:161:42: note: directive argument in the range [0, 255]
+  161 |                         sprintf(timeStr, "%02d:%02d:%02d", my_clock.hrs,my_clock.min,my_clock.sec);
+      |                                          ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:161:25: note: 'sprintf' output between 9 and 12 bytes into a destination of size 9
+  161 |                         sprintf(timeStr, "%02d:%02d:%02d", my_clock.hrs,my_clock.min,my_clock.sec);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Labb4_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb4_LCD\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb4_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Labb4_LCD.elf
  
-arm-none-eabi-size  ReverseSensor_Project.elf 
-arm-none-eabi-objdump -h -S ReverseSensor_Project.elf  > "ReverseSensor_Project.list"
+arm-none-eabi-size  Labb4_LCD.elf 
+arm-none-eabi-objdump -h -S Labb4_LCD.elf  > "Labb4_LCD.list"
    text	   data	    bss	    dec	    hex	filename
-  18100	     12	   1876	  19988	   4e14	ReverseSensor_Project.elf
+  20532	     96	   2288	  22916	   5984	Labb4_LCD.elf
 Finished building: default.size.stdout
  
-Finished building: ReverseSensor_Project.list
- 
-14:46:36 **** Incremental Build of configuration Debug for project ReverseSensor_Project ****
-make -j8 all 
-arm-none-eabi-size  ReverseSensor_Project.elf 
-   text	   data	    bss	    dec	    hex	filename
-  18100	     12	   1876	  19988	   4e14	ReverseSensor_Project.elf
-Finished building: default.size.stdout
+Finished building: Labb4_LCD.list
  

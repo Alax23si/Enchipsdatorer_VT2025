@@ -140,7 +140,7 @@ void TextLCD_Home		(TextLCDType * hlcd)
 
 void TextLCD_Clear		(TextLCDType * hlcd)
 {
-	TextLCD_SnedByte(hlcd, 0x01, GPIO_PIN_RESET);
+	TextLCD_SendByte(hlcd, 0x01, GPIO_PIN_RESET);
 	My_Delay(41);
 }
 

@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "lcd.h"
 #include <stdio.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -144,7 +145,7 @@ int main(void)
 	wait_for_button_press();
 	cd_set(&my_clock,0,0,0);
 	TextLCDType lcd;
-	TextLCD_Init(&lcd,&hi2c1,0x4E); // kanske fel
+	TextLCD_Init(&lcd,&hi2c1,0x4E);
 	char timeStr[9];
 	/* USER CODE END 2 */
 
@@ -158,7 +159,7 @@ int main(void)
 		if(interFlag>0){
 			cd_tick(&my_clock);
 			sprintf(timeStr, "%02d:%02d:%02d", my_clock.hrs,my_clock.min,my_clock.sec);
-			TextLCD_Position(&lcd,0,0);
+			TextLCD_Position(&lcd,0,1);
 			TextLCD_PutStr(&lcd, "Tid:");
 			TextLCD_Position(&lcd,8,1);
 			TextLCD_PutStr(&lcd,timeStr);
