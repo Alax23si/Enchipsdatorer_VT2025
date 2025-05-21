@@ -33,3 +33,24 @@ Finished building: default.size.stdout
  
 Finished building: ReverseSensor_Project.list
  
+13:17:31 **** Incremental Build of configuration Debug for project ReverseSensor_Project ****
+make -j8 all 
+arm-none-eabi-size  ReverseSensor_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17356	     12	   1796	  19164	   4adc	ReverseSensor_Project.elf
+Finished building: default.size.stdout
+ 
+13:17:56 **** Incremental Build of configuration Debug for project ReverseSensor_Project ****
+make -j8 all 
+arm-none-eabi-size  ReverseSensor_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17356	     12	   1796	  19164	   4adc	ReverseSensor_Project.elf
+Finished building: default.size.stdout
+ 
+13:18:11 **** Incremental Build of configuration Debug for project ReverseSensor_Project ****
+make -j8 all 
+arm-none-eabi-size  ReverseSensor_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17356	     12	   1796	  19164	   4adc	ReverseSensor_Project.elf
+Finished building: default.size.stdout
+ 
