@@ -28,9 +28,10 @@ void abuzz_p_short();
 
 void abuzz_start()
 {
-	TIM1->PSC 	= 40000-1;
+	TIM1->PSC 	= 40-1;
 	TIM1->CNT   = 0x0000;
-	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+	TIM1->CCR2  = 20;
+	HAL_GPIO_WritePin(abuzz_OP_GPIO_Port, abuzz_OP_Pin,GPIO_PIN_SET);
 }
 
 
@@ -40,6 +41,8 @@ void abuzz_stop()
 	TIM1->PSC  = 0x0000;
 	TIM1->ARR  = 0xFFFF;
 	TIM1->CCR2 = 0x0000;
+	HAL_GPIO_WritePin(abuzz_OP_GPIO_Port, abuzz_OP_Pin,GPIO_PIN_RESET);
+
 }
 
 void abuzz_p_long()

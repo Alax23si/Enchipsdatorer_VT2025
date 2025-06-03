@@ -1280,130 +1280,38 @@ org.eclipse.core.runtime.AssertionFailedException: assertion failed: The applica
 	 at org.eclipse.ui.console.IOConsoleInputStream.read(IOConsoleInputStream.java:113)
 	 at org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob.run(GdbBasicCliConsole.java:248)
 	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SESSION 2025-05-16 20:20:40.772 -----------------------------------------------
+!SESSION 2025-05-19 12:50:55.757 -----------------------------------------------
 eclipse.buildId=Version 1.18.0
 java.version=21.0.3
 java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-16 20:20:43.604
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-19 12:51:03.612
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-16 20:20:43.605
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-19 12:51:03.615
 !MESSAGE Log4j2 initialized with config file C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\.metadata\.log4j2.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-16 20:20:47.994
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-19 12:51:11.842
 !MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2025-05-23 11:33:17.492 -----------------------------------------------
+!SESSION 2025-05-21 09:04:30.102 -----------------------------------------------
 eclipse.buildId=Version 1.18.0
 java.version=21.0.3
 java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-23 11:33:20.339
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-21 09:04:38.061
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-23 11:33:20.340
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-21 09:04:38.063
 !MESSAGE Log4j2 initialized with config file C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\.metadata\.log4j2.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-23 11:33:24.164
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-21 09:04:46.540
 !MESSAGE Started RMI Server, listening on port 41337
 
-!ENTRY org.eclipse.core.jobs 2 2 2025-05-23 11:33:28.928
-!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$39 RUNNING
-	 at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	 at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
-	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:293)
-	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:774)
-	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:691)
-	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:657)
-	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:637)
-	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:616)
-	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
-	 at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
-	 at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:520)
-	 at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
-	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
-	 at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	 at com.teamdev.jxbrowser.browser.internal.rpc.GpuStub.requestPrototype(GpuStub.java:54)
-	 at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.createSubscriptionRequest(CallbackStream.java:97)
-	 at com.teamdev.jxbrowser.internal.rpc.stream.Stream.subscribe(Stream.java:88)
-	 at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.set(CallbackStream.java:64)
-	 at com.teamdev.jxbrowser.internal.rpc.ServiceConnectionImpl.set(ServiceConnectionImpl.java:107)
-	 at com.teamdev.jxbrowser.browser.internal.BrowserWidget.<init>(BrowserWidget.java:166)
-	 at com.teamdev.jxbrowser.browser.internal.BrowserImpl.<init>(BrowserImpl.java:185)
-	 at com.teamdev.jxbrowser.profile.internal.ProfileImpl.newBrowser(ProfileImpl.java:149)
-	 at com.st.microxplorer.plugins.userauth.WebApp.<init>(WebApp.java:174)
-	 at com.st.microxplorer.plugins.userauth.WebApp.getInstance(WebApp.java:773)
-	 at com.st.microxplorer.plugins.userauth.UserAuth.getBrowserView(UserAuth.java:488)
-	 at com.st.microxplorer.plugins.userauth.UserAuth.activatePlugin(UserAuth.java:191)
-	 at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:29)
-	 at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
-	 at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
-	 at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
-	 at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
-	 at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
-	 at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	 at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2733)
-	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SESSION 2025-05-28 13:50:05.253 -----------------------------------------------
-eclipse.buildId=Version 1.18.0
-java.version=21.0.3
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-28 13:50:08.150
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-28 13:50:08.151
-!MESSAGE Log4j2 initialized with config file C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-28 13:50:11.634
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2025-06-02 10:25:51.567 -----------------------------------------------
-eclipse.buildId=Version 1.18.0
-java.version=21.0.3
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-02 10:25:54.349
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-02 10:25:54.349
-!MESSAGE Log4j2 initialized with config file C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-02 10:25:57.833
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.core 1 0 2025-06-02 10:27:17.482
-!MESSAGE Indexed 'Labb5_ADC' (23 sources, 82 headers) in 1.3 sec: 5,348 declarations; 28,158 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.006%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2025-06-02 14:29:18.951
-!MESSAGE Indexed 'Labb5_ADC' (28 sources, 89 headers) in 0.773 sec: 7,504 declarations; 55,630 references; 0 unresolved inclusions; 1 syntax errors; 5 unresolved names (0.0079%)
-!SESSION 2025-06-03 08:39:41.536 -----------------------------------------------
-eclipse.buildId=Version 1.18.0
-java.version=21.0.3
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-03 08:39:44.607
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-03 08:39:44.608
-!MESSAGE Log4j2 initialized with config file C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-03 08:39:47.849
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.core 1 0 2025-06-03 08:42:00.032
-!MESSAGE Indexed 'Labb5_ADC' (28 sources, 126 headers) in 1.9 sec: 14,964 declarations; 93,749 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.16%)
-
-!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-06-03 09:16:17.475
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-05-21 10:25:00.756
 !MESSAGE Error in final launch sequence:
 
 Setup exceptions
@@ -1419,95 +1327,24 @@ org.eclipse.core.runtime.CoreException: Setup exceptions
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-06-03 09:16:17.475
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-05-21 10:25:00.757
 !MESSAGE Setup exceptions
 
-!ENTRY org.eclipse.ui.workbench.texteditor 4 0 2025-06-03 15:55:52.855
-!MESSAGE Disconnected before saving. https://bugs.eclipse.org/bugs/show_bug.cgi?id=569286 org.eclipse.cdt.internal.ui.editor.CEditor main.c
-!STACK 0
-java.lang.IllegalStateException: Disconnected before saving. https://bugs.eclipse.org/bugs/show_bug.cgi?id=569286 org.eclipse.cdt.internal.ui.editor.CEditor main.c
-	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.disconnectEditor(AbstractTextEditor.java:7200)
-	at org.eclipse.ui.texteditor.AbstractTextEditor.dispose(AbstractTextEditor.java:4339)
-	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.dispose(AbstractDecoratedTextEditor.java:404)
-	at org.eclipse.ui.editors.text.TextEditor.dispose(TextEditor.java:94)
-	at org.eclipse.cdt.internal.ui.editor.CEditor.dispose(CEditor.java:2197)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:264)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:939)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:182)
-	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:177)
-	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
-	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:103)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:487)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:185)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:943)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:857)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:184)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:206)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:201)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:131)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:73)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:316)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1411)
-	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1540)
-	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1454)
-	at org.eclipse.ui.actions.CloseResourceAction.closeEditors(CloseResourceAction.java:433)
-	at org.eclipse.ui.actions.CloseResourceAction$1.run(CloseResourceAction.java:358)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.ui.actions.CloseResourceAction.lambda$2(CloseResourceAction.java:349)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
-	at org.eclipse.ui.actions.CloseResourceAction.closeMatchingEditors(CloseResourceAction.java:362)
-	at org.eclipse.ui.actions.CloseResourceAction.run(CloseResourceAction.java:200)
-	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:171)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-	Suppressed: java.lang.IllegalStateException: isDirty check after disconnect
-		at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.isDirty(AbstractTextEditor.java:7249)
-		at org.eclipse.ui.internal.Workbench.getFilteredSaveables(Workbench.java:3502)
-		at org.eclipse.ui.internal.Workbench.saveAll(Workbench.java:3475)
-		at org.eclipse.ui.ide.IDE$1.run(IDE.java:1456)
-		at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-		at org.eclipse.ui.ide.IDE.saveAllEditors(IDE.java:1444)
-		at org.eclipse.ui.actions.CloseResourceAction.run(CloseResourceAction.java:190)
-		... 27 more
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-05-21 13:18:06.026
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-05-21 13:18:06.026
+!MESSAGE Setup exceptions

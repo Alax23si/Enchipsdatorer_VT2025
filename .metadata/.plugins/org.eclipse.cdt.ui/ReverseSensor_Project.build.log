@@ -1,10 +1,10 @@
-14:46:36 **** Incremental Build of configuration Debug for project ReverseSensor_Project ****
+13:18:11 **** Incremental Build of configuration Debug for project ReverseSensor_Project ****
 make -j8 all 
 arm-none-eabi-size  ReverseSensor_Project.elf 
    text	   data	    bss	    dec	    hex	filename
-  18100	     12	   1876	  19988	   4e14	ReverseSensor_Project.elf
+  17356	     12	   1796	  19164	   4adc	ReverseSensor_Project.elf
 Finished building: default.size.stdout
  
 
-14:46:37 Build Finished. 0 errors, 0 warnings. (took 556ms)
+13:18:12 Build Finished. 0 errors, 0 warnings. (took 565ms)
 
