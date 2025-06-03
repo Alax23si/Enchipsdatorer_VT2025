@@ -70,8 +70,8 @@ uint8_t	ADCSET  = 0;
 uint16_t adc_buffer[ADC_BUF_SIZE];
 int adc_buf_ix = 0;
 
-#define JOY_X_IX 1
-#define JOY_Y_IX 0
+#define JOY_X_IX 0
+#define JOY_Y_IX 1
 #define FOTO_IX 2
 float xi;
 float y;
@@ -142,9 +142,6 @@ int main(void)
 	//uint16_t adc_val = read_one_adc_value(&hadc1);
   	HAL_ADC_Start_IT(&hadc1);
 	TextLCD_Init(&lcd, &hi2c1,0x4E);
-	HAL_Delay(50);
-	TextLCD_Position(&lcd, 0, 0);
-	TextLCD_PutStr(&lcd, "Test OK");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -162,8 +159,8 @@ int main(void)
 		TextLCD_Position(&lcd, 0, 0);
 		sprintf(line, "X:%+.2f Y:%+.2f", xi, y);
 		TextLCD_PutStr(&lcd ,line);
-
-		TextLCD_Position(&lcd, 1,0);
+		HAL_Delay(60);
+		TextLCD_Position(&lcd, 0,1);
 		sprintf(line, "Lj:%0.3f       ", light);
 		TextLCD_PutStr(&lcd ,line);
 
@@ -173,47 +170,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-<<<<<<<< HEAD:Labb5_ADC/Core/Src/main.c
-========
 
-		if (started) {
-			HAL_Delay(100);
-			if (Distance > 400.0f) {
-				abuzz_stop();
-			}
-			else if (Distance > 200.0f) {
-				abuzz_start();
-				TIM1->ARR = 6000 - 1;  // 3 sekunder
-				TIM1->CCR2 = 3000;     // 50% duty
-			}
-			else if (Distance > 100.0f) {
-				abuzz_start();
-				TIM1->ARR = 2000 - 1;  // 1 sekund
-				TIM1->CCR2 = 1000;
-			}
-			else if (Distance > 50.0f) {
-				abuzz_start();
-				TIM1->ARR = 1500 - 1;  // 0.75 sek
-				TIM1->CCR2 = 750;
-			}
-			else if (Distance > 30.0f) {
-				abuzz_start();
-				TIM1->ARR = 1000 - 1;  // 0.5 sek
-				TIM1->CCR2 = 500;
-			}
-			else if (Distance > 20.0f) {
-				abuzz_start();
-				TIM1->ARR = 500 - 1;   // 0.25 sek
-				TIM1->CCR2 = 250;
-			}
-			else {
-				abuzz_start();
-				TIM1->ARR = 100 - 1;   // konstant
-				TIM1->CCR2 = 100;      // 100% duty (ingen paus)
-			}
-
-		}
->>>>>>>> 460976ca9e58127658a594402a6ce9c230dc0f9a:.metadata/.plugins/org.eclipse.core.resources/.history/74/3027bcf4153600101f44ce83a07bed46
 	}
   /* USER CODE END 3 */
 }

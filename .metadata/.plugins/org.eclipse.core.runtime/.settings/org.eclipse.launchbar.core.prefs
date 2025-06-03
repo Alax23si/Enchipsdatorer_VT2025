@@ -1,14 +1,10 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=2d63062060e3af8026e74be6ddc7dfcfe939e1b4
+>>>>>>>=460976ca9e58127658a594402a6ce9c230dc0f9a
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-<<<<<<< HEAD
 configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb5_ADC Debug
-=======
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ReverseSensor_Project Debug
->>>>>>> 460976ca9e58127658a594402a6ce9c230dc0f9a
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb0_blinky\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb0_blinky\ Debug/activeLaunchTarget=null\:---
@@ -20,6 +16,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb4_LCD\ Debug/activeLaunchMo
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb4_LCD\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb5_ADC\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb5_ADC\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb6_PWM\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ReverseSensor_Project\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ReverseSensor_Project\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:labb1_tarning\ Debug/activeLaunchMode=debug
