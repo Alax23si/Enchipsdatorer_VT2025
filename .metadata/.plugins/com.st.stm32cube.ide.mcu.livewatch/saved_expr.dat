@@ -1,3 +1,5 @@
 xi
 y
 light
+adc_x
+uint32_t adc_x

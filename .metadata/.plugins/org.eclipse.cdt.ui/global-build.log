@@ -1,35 +1,70 @@
-20:30:02 **** Incremental Build of configuration Debug for project Labb5_ADC ****
+17:36:40 **** Incremental Build of configuration Debug for project lab6_elektriska ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Labb5_ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb5_ADC\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb5_ADC.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Labb5_ADC.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab6_elektriska.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\lab6_elektriska\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_elektriska.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_elektriska.elf
  
-arm-none-eabi-size  Labb5_ADC.elf 
-arm-none-eabi-objdump -h -S Labb5_ADC.elf  > "Labb5_ADC.list"
+arm-none-eabi-size  lab6_elektriska.elf 
+arm-none-eabi-objdump -h -S lab6_elektriska.elf  > "lab6_elektriska.list"
    text	   data	    bss	    dec	    hex	filename
-  38208	    472	   2344	  41024	   a040	Labb5_ADC.elf
+  25072	     92	   2220	  27384	   6af8	lab6_elektriska.elf
 Finished building: default.size.stdout
  
-Finished building: Labb5_ADC.list
+Finished building: lab6_elektriska.list
  
-20:30:08 **** Incremental Build of configuration Debug for project Labb5_ADC ****
+17:37:04 **** Incremental Build of configuration Debug for project lab6_elektriska ****
 make -j12 all 
-arm-none-eabi-size  Labb5_ADC.elf 
+arm-none-eabi-size  lab6_elektriska.elf 
    text	   data	    bss	    dec	    hex	filename
-  38208	    472	   2344	  41024	   a040	Labb5_ADC.elf
+  25072	     92	   2220	  27384	   6af8	lab6_elektriska.elf
 Finished building: default.size.stdout
  
-20:35:53 **** Incremental Build of configuration Debug for project Labb5_ADC ****
+17:37:41 **** Incremental Build of configuration Debug for project lab6_elektriska ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Labb5_ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\Labb5_ADC\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb5_ADC.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Labb5_ADC.elf
- 
-arm-none-eabi-size  Labb5_ADC.elf 
-arm-none-eabi-objdump -h -S Labb5_ADC.elf  > "Labb5_ADC.list"
+arm-none-eabi-size  lab6_elektriska.elf 
    text	   data	    bss	    dec	    hex	filename
-  38208	    472	   2344	  41024	   a040	Labb5_ADC.elf
+  25072	     92	   2220	  27384	   6af8	lab6_elektriska.elf
 Finished building: default.size.stdout
  
-Finished building: Labb5_ADC.list
+17:42:44 **** Incremental Build of configuration Debug for project lab6_elektriska ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab6_elektriska.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\lab6_elektriska\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_elektriska.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_elektriska.elf
+ 
+arm-none-eabi-size  lab6_elektriska.elf 
+arm-none-eabi-objdump -h -S lab6_elektriska.elf  > "lab6_elektriska.list"
+   text	   data	    bss	    dec	    hex	filename
+  25076	     92	   2220	  27388	   6afc	lab6_elektriska.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_elektriska.list
+ 
+17:43:03 **** Incremental Build of configuration Debug for project lab6_elektriska ****
+make -j12 all 
+arm-none-eabi-size  lab6_elektriska.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25076	     92	   2220	  27388	   6afc	lab6_elektriska.elf
+Finished building: default.size.stdout
+ 
+17:44:17 **** Incremental Build of configuration Debug for project lab6_elektriska ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L433xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab6_elektriska.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\almgr\Documents\GitHub\Enchipsdatorer_VT2025\lab6_elektriska\STM32L433RCTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab6_elektriska.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab6_elektriska.elf
+ 
+arm-none-eabi-size  lab6_elektriska.elf 
+arm-none-eabi-objdump -h -S lab6_elektriska.elf  > "lab6_elektriska.list"
+   text	   data	    bss	    dec	    hex	filename
+  25076	     92	   2220	  27388	   6afc	lab6_elektriska.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab6_elektriska.list
+ 
+17:44:32 **** Incremental Build of configuration Debug for project lab6_elektriska ****
+make -j12 all 
+arm-none-eabi-size  lab6_elektriska.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25076	     92	   2220	  27388	   6afc	lab6_elektriska.elf
+Finished building: default.size.stdout
  
