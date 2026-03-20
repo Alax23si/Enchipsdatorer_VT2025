@@ -1,8 +1,5 @@
 /*
- * lab_van.h
- *
- *  Created on: Mar 4, 2026
- *      Author: eliashellman
+ * lab_can.h
  */
 
 #ifndef INC_LAB_CAN_H_
